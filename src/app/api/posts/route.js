@@ -5,3 +5,12 @@ export async function GET(request) {
     return new Response(JSON.stringify(data))
 }
 
+export async function POST(request) {
+    const data = await request.json()
+    console.log(data)
+    return new Response(
+        JSON.stringify(
+            {message: "Post Succesful!!!"}
+        )
+    )
+}

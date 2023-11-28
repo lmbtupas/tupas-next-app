@@ -19,7 +19,7 @@ const Posts = () => {
   return (
     <div>
         {results.data?.map(post =>(
-          <Post title={post.title} author={post.author} body={post.body}/>
+          <Post key={post.id} title={post.title} author={post.author} body={post.body}/>
         ))}
     </div>
   )
